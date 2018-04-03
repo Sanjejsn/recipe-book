@@ -22,7 +22,7 @@ export class RecipeService {
         new Recipe (
           'Hamburger',
           'Everything you need!',
-          `https://cdn.pixabay.com/photo/2016/03/05/19/02/abstract-1238246_1280.jpg`,
+          `https://png.pngtree.com/element_origin_min_pic/16/11/20/15c60a58fae57263a20937951f1841ef.jpg`,
          [
            new Ingredient("Meat", 1),
            new Ingredient("Buns", 2)
@@ -31,6 +31,10 @@ export class RecipeService {
 
       getRecipes() {
         return this.recipes.slice();
+      }
+
+      getRecipe(index: number) {
+        return this.recipes[index];
       }
 
 }
